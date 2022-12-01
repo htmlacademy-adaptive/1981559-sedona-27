@@ -47,11 +47,25 @@
 </header>
 
 <main class="form-container">
-  <section class="feedback">
-    <h2 class="feedback__title">Оставьте свой отзыв</h2>
-    <p class="feedback__slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-    <p class="feedback__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-  </section>
+  <header class="feedback-header">
+    <h2 class="feedback-header__title">Оставьте свой отзыв</h2>
+    <p class="feedback-header__slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+    <p class="feedback-header__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+  </header>
+  <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
+    <fieldset class="feedback-form__user-contact">
+      <h2 class="feedback-form__title">Представьтесь:</h2>
+      <label class="feedback-form__label" for="feedback-name">ИМЯ*:</label>
+      <input class="feedback-form__input" id="feedback-name" name="feedback-name" type="text" placeholder="Пётр" required>
+
+      <label class="feedback-form__label" for="feedback-surname">ФАМИЛИЯ*:</label>
+      <input class="feedback-form__input" id="feedback-surname" name="feedback-surname" type="text" placeholder="Пустота" required>
+
+      <label class="feedback-form__label" for="feedback-patronymic">Отчество:</label>
+      <input class="feedback-form__input" id="feedback-patronymic" name="feedback-patronymic" placeholder="Викторович" type="text">
+    </fieldset>
+
+  </form>
 
 </main>
 
