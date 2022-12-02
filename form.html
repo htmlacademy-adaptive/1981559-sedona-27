@@ -53,8 +53,8 @@
     <p class="feedback-header__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
   </header>
   <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
-    <fieldset class="feedback-form__user-contact">
-      <h2 class="feedback-form__title">Представьтесь:</h2>
+    <fieldset class="feedback-form__user-information">
+      <legend class="feedback-form__title">Представьтесь:</legend>
       <label class="feedback-form__label" for="feedback-name">ИМЯ*:</label>
       <input class="feedback-form__input" id="feedback-name" name="feedback-name" type="text" placeholder="Пётр" required>
 
@@ -64,6 +64,17 @@
       <label class="feedback-form__label" for="feedback-patronymic">Отчество:</label>
       <input class="feedback-form__input" id="feedback-patronymic" name="feedback-patronymic" placeholder="Викторович" type="text">
     </fieldset>
+
+    <fieldset class="feedback-form__user-contact">
+      <legend class="feedback-form__title">Контактная информация:</legend>
+      <label class="feedback-form__label" for="feedback-phone">Контактный телефон*:</label>
+      <input class="feedback-form__input feedback-form__input--placeholder" id="feedback-phone" name="feedback-phone" type="tel" placeholder="Введите телефон" required>
+
+      <label class="feedback-form__label" for="feedback-e-mail">Электронная почта*:</label>
+      <input class="feedback-form__input feedback-form__input--placeholder" id="feedback-e-mail" name="feedback-e-mail" type="email" placeholder="Введите e-mail" required>
+    </fieldset>
+
+
 
   </form>
 
