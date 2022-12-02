@@ -75,7 +75,7 @@
     </fieldset>
 
     <fieldset class="feedback-form__user-scoring user-radio-select">
-      <legend class="user-radio-select">Ваше общее впечатление:</legend>
+      <legend class="user-radio-select__title">Ваше общее впечатление:</legend>
       <ul class="user-radio-select__list">
         <li class="user-radio-select__item">
           <label class="user-radio-select__label">
@@ -99,7 +99,40 @@
           </label>
         </li>
       </ul>
+    </fieldset>
 
+    <fieldset class="feedback-form__user-scoring user-checkbox-select">
+      <legend class="user-checkbox-select__title">Посещенные достопримечательности:</legend>
+      <ul class="user-checkbox-select__ist">
+        <li class="user-checkbox-select__item">
+          <label class="user-checkbox-select__label">
+            <input class="visually-hidden user-checkbox-select__input" type="checkbox" name="user-scoring" value="devil-bridge" checked>
+            <span class="user-checkbox-select__mark"></span>
+            Мост Дьявола
+          </label>
+        </li>
+        <li class="user-checkbox-select__item">
+          <label class="user-checkbox-select__label">
+            <input class="visually-hidden user-checkbox-select__input" type="checkbox" name="user-scoring" value="mountain-bell" checked>
+            <span class="user-checkbox-select__mark"></span>
+            Гора-Колокол
+          </label>
+        </li>
+        <li class="user-checkbox-select__item">
+          <label class="user-checkbox-select__label">
+            <input class="visually-hidden user-checkbox-select__input" type="checkbox" name="user-scoring" value="slide-park" checked>
+            <span class="user-checkbox-select__mark"></span>
+            Слайд-парк
+          </label>
+        </li>
+        <li class="user-checkbox-select__item">
+          <label class="user-checkbox-select__label">
+            <input class="visually-hidden user-checkbox-select__input" type="checkbox" name="user-scoring" value="red-rocks">
+            <span class="user-checkbox-select__mark"></span>
+            Красные скалы
+          </label>
+        </li>
+      </ul>
     </fieldset>
 
   </form>
