@@ -74,7 +74,33 @@
       <input class="feedback-form__input feedback-form__input--placeholder" id="feedback-e-mail" name="feedback-e-mail" type="email" placeholder="Введите e-mail" required>
     </fieldset>
 
+    <fieldset class="feedback-form__user-scoring user-radio-select">
+      <legend class="user-radio-select">Ваше общее впечатление:</legend>
+      <ul class="user-radio-select__list">
+        <li class="user-radio-select__item">
+          <label class="user-radio-select__label">
+            <input class="visually-hidden user-radio-select__input" type="radio" name="user-scoring" value="great" checked>
+            <span class="user-radio-select__mark"></span>
+            Скорее положительное
+          </label>
+        </li>
+        <li class="user-radio-select__item">
+          <label class="user-radio-select__label">
+            <input class="visually-hidden user-radio-select__input" type="radio" name="user-scoring" value="negative">
+            <span class="user-radio-select__mark"></span>
+            Скорее отрицательное
+          </label>
+        </li>
+        <li class="user-radio-select__item">
+          <label class="user-radio-select__label">
+            <input class="visually-hidden user-radio-select__input" type="radio" name="user-scoring" value="unable">
+            <span class="user-radio-select__mark"></span>
+            Затрудняюсь ответить
+          </label>
+        </li>
+      </ul>
 
+    </fieldset>
 
   </form>
 
