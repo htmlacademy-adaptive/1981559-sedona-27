@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Каталог</title>
+</head>
+<body>
+<header class="main-header">
+  <a class="main-header__logo" href="#">
+    <img src="source/img/header/logo.svg" width="185" height="96" alt="Седона">
+  </a>
+  <nav class="main-nav">
+    <button class="main-nav__toggle" type="button">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
+    <div class="main-nav__wrapper">
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item site-list__item--active">
+          <a href="#">
+            Главная
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">
+            Фото и видео
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">
+            Форма Отзыва
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">
+            HTML ACADEMY
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <section class="hero">
+    <h1 class="visually-hidden">Каталог Седоны.</h1>
+    <div class="hero__wrapper hero__wrapper--secondary">
+      <img class="hero__content hero__content--secondary-image" src="source/img/header/hero-secondary.svg" width="229" height="39" alt="Добро пожаловать в Седону.">
+    </div>
+  </section>
+</header>
+
+<main class="catalog-container">
+  <header class="catalog-header">
+    <h2 class="catalog-header__title">Фото и видео</h2>
+    <p class="catalog-header__slogan">
+      Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
+    </p>
+  </header>
+  <section class="catalog-preview">
+    <h3 class="visually-hidden">Список фото-карточек.</h3>
+    <ul class="catalog-preview__list">
+      <li class="catalog-preview__item">
+        <img class="catalog-preview__image" src="source/img/catalog/cards/photo-1-mobile.jpg" width="280" height="280" alt="Неродные просторы.">
+        <h4 class="catalog-preview__title">Неродные просторы</h4>
+        <cite class="catalog-preview__author">Автор фото: Борис</cite>
+        <button class="catalog-preview__like-button card-like" type="button">
+          <svg class="card-like__icon" width="23" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" d="m12.9636 3.78-.6272 3.045-.6273 2.625h9.0954v2.205L17.7727 18.9h-9.409V8.4l4.5999-4.62ZM2.0909 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.4182.315-.6273.84-.6273 1.47v10.5c0 1.155.941 2.1 2.091 2.1h9.409c.8364 0 1.5682-.525 1.8818-1.26l3.1364-7.455c.1046-.21.1046-.525.1046-.735v-2.1H23c0-1.155-.9409-2.1-2.0909-2.1h-6.5864l1.0455-4.83v-.315c0-.42-.2091-.84-.4182-1.155L13.8 0ZM4.1818 8.4H0V21h4.1818V8.4Z" fill="#000"/></svg>
+          <span class="card-like__value">1350</span>
+        </button>
+      </li>
+      <li class="catalog-preview__item">
+        <img class="catalog-preview__image" src="source/img/catalog/cards/photo-2-mobile.jpg" width="280" height="280" alt="Местная растительность.">
+        <h4 class="catalog-preview__title">Местная растительность</h4>
+        <cite class="catalog-preview__author">Автор фото: Сергей</cite>
+        <button class="catalog-preview__like-button card-like" type="button">
+          <svg class="card-like__icon" width="23" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" d="m12.9636 3.78-.6272 3.045-.6273 2.625h9.0954v2.205L17.7727 18.9h-9.409V8.4l4.5999-4.62ZM2.0909 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.4182.315-.6273.84-.6273 1.47v10.5c0 1.155.941 2.1 2.091 2.1h9.409c.8364 0 1.5682-.525 1.8818-1.26l3.1364-7.455c.1046-.21.1046-.525.1046-.735v-2.1H23c0-1.155-.9409-2.1-2.0909-2.1h-6.5864l1.0455-4.83v-.315c0-.42-.2091-.84-.4182-1.155L13.8 0ZM4.1818 8.4H0V21h4.1818V8.4Z" fill="#000"/></svg>
+          <span class="card-like__value">143</span>
+        </button>
+      </li>
+      <li class="catalog-preview__item">
+        <img class="catalog-preview__image" src="source/img/catalog/cards/photo-3-mobile.jpg" width="280" height="280" alt="Дорога на север.">
+        <h4 class="catalog-preview__title">Дорога на север</h4>
+        <cite class="catalog-preview__author">Автор фото: Петр</cite>
+        <button class="catalog-preview__like-button card-like" type="button">
+          <svg class="card-like__icon" width="23" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" d="m12.9636 3.78-.6272 3.045-.6273 2.625h9.0954v2.205L17.7727 18.9h-9.409V8.4l4.5999-4.62ZM2.0909 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.4182.315-.6273.84-.6273 1.47v10.5c0 1.155.941 2.1 2.091 2.1h9.409c.8364 0 1.5682-.525 1.8818-1.26l3.1364-7.455c.1046-.21.1046-.525.1046-.735v-2.1H23c0-1.155-.9409-2.1-2.0909-2.1h-6.5864l1.0455-4.83v-.315c0-.42-.2091-.84-.4182-1.155L13.8 0ZM4.1818 8.4H0V21h4.1818V8.4Z" fill="#000"/></svg>
+          <span class="card-like__value">96</span>
+        </button>
+      </li>
+      <li class="catalog-preview__item">
+        <img class="catalog-preview__image" src="source/img/catalog/cards/photo-4-mobile.jpg" width="280" height="280" alt="Мост дьявола.">
+        <h4 class="catalog-preview__title">Мост дьявола</h4>
+        <cite class="catalog-preview__author">Автор фото: Антон</cite>
+        <button class="catalog-preview__like-button card-like" type="button">
+          <svg class="card-like__icon" width="23" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" d="m12.9636 3.78-.6272 3.045-.6273 2.625h9.0954v2.205L17.7727 18.9h-9.409V8.4l4.5999-4.62ZM2.0909 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.4182.315-.6273.84-.6273 1.47v10.5c0 1.155.941 2.1 2.091 2.1h9.409c.8364 0 1.5682-.525 1.8818-1.26l3.1364-7.455c.1046-.21.1046-.525.1046-.735v-2.1H23c0-1.155-.9409-2.1-2.0909-2.1h-6.5864l1.0455-4.83v-.315c0-.42-.2091-.84-.4182-1.155L13.8 0ZM4.1818 8.4H0V21h4.1818V8.4Z" fill="#000"/></svg>
+          <span class="card-like__value">254</span>
+        </button>
+      </li>
+    </ul>
+  </section>
+  <section class="catalog-presentation">
+    <h3 class="visually-hidden">Видеопрезентация</h3>
+    <img class="catalog-presentation__video" src="source/img/catalog/cards/video-mobile.jpg" width="280" height="177" alt="Видеопрезентация">
+    <button class="catalog-presentation__play-button" type="button">
+      <span class="visually-hidden">Запуск видео.</span>
+    </button>
+  </section>
+</main>
+
+<footer class="main-footer">
+  <a class="main-footer__link" href="#">#visitsedona</a>
+  <ul class="main-footer__list social">
+    <li class="social__item">
+      <a class="social__link" href="#">
+        <span class="visually-hidden">Вконтакте.</span>
+        <svg class="social__icon" width="48" height="48" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="M35.45 17.948c.166-.546 0-.948-.795-.948H32.03c-.668 0-.976.347-1.143.73 0 0-1.335 3.196-3.226 5.272-.612.602-.89.793-1.224.793-.167 0-.418-.191-.418-.738v-5.109c0-.656-.184-.948-.74-.948h-4.128c-.417 0-.668.304-.668.593 0 .621.946.765 1.043 2.513v3.798c0 .833-.153.984-.487.984-.89 0-3.055-3.211-4.34-6.885-.249-.715-.501-1.003-1.172-1.003H12.9c-.75 0-.9.347-.9.73 0 .682.89 4.07 4.145 8.551C18.315 29.341 21.37 31 24.153 31c1.669 0 1.875-.368 1.875-1.003v-2.313c0-.737.158-.884.687-.884.39 0 1.057.192 2.615 1.667C31.11 30.216 31.403 31 32.405 31h2.625c.75 0 1.126-.368.91-1.096-.238-.724-1.088-1.775-2.215-3.022-.612-.71-1.53-1.475-1.809-1.858-.389-.491-.278-.71 0-1.147 0 0 3.2-4.426 3.533-5.929h.001Z" fill="#fff"/></g><defs><clipPath id="a"><path fill="#fff" d="M12 12h24v24H12z"/></clipPath></defs></svg>
+      </a>
+    </li>
+    <li class="social__item">
+      <a class="social__link" href="#">
+        <span class="visually-hidden">Телеграм.</span>
+        <svg class="social__icon" width="48" height="48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M34.4393 16.6223 31.2705 31.566c-.2392 1.0545-.8625 1.317-1.7482.8205l-4.8285-3.558-2.3295 2.241c-.258.258-.4733.4733-.9705.4733l.3472-4.917 8.9483-8.0858c.3892-.3465-.0848-.5392-.6045-.192l-11.0625 6.966-4.7625-1.491c-1.0358-.3232-1.0545-1.0357.216-1.533l18.6277-7.1767c.8625-.3233 1.617.192 1.3358 1.5097v-.0007Z" fill="#fff"/></svg>
+      </a>
+    </li>
+    <li class="social__item">
+      <a class="social__link" href="#">
+        <span class="visually-hidden">Ютуб.</span>
+        <svg class="social__icon" width="48" height="48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M31.1813 17h-14.368C15.3062 17 14 18.3 14 19.8v8.3c0 1.6 1.3062 2.9 2.8133 2.9h14.368c1.6076 0 2.8133-1.3 2.8133-2.8v-8.4c.1004-1.5-1.2057-2.8-2.8133-2.8Zm-10.148 10.4v-6.8l6.8323 3.4-6.8323 3.4Z" fill="#fff"/></svg>
+      </a>
+    </li>
+  </ul>
+  <a class="special-link" href="#">
+    Разработано
+    <svg class="special-link__icon" width="27" height="35" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" fill="#000"/></svg>
+  </a>
+</footer>
+</body>
+</html>
