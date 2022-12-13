@@ -1,5 +1,11 @@
 .feedback-form {
   padding: 0 18px;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+  }
 }
 
 .feedback-form__user-information {
@@ -8,6 +14,11 @@
   padding: 0;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
 }
 
 .feedback-form__title {
@@ -41,12 +52,21 @@
   flex-direction: column;
   margin: 0;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
 }
 
 .feedback-form__user-scoring {
   border: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    grid-column: 1 / 3;
+  }
 }
 
 .feedback-form__user-text-place {
@@ -55,9 +75,15 @@
   padding: 0;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    grid-column: 1 / 3;
+  }
 }
 
 .feedback-form__user-text {
+  font-size: 18px;
+  line-height: 26px;
   background-color: #f2f2f2;
   border: none;
   padding: 16px;
@@ -71,10 +97,21 @@
   background-color: #81b3d2;
   padding: 16px;
   width: 100%;
+
+  @media (min-width: @tablet-width) {
+    width: 324px;
+  }
 }
 
 .feedback-form__description-for-requirements {
   font-size: 12px;
   color: rgba(51, 51, 51, 0.6);
   float: right;
+
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    line-height: 21px;
+    color: #333333;
+    justify-self: end;
+  }
 }
