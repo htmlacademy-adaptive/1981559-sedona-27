@@ -13,6 +13,12 @@
 .advantages__list {
   margin: 0;
   padding: 0;
+  list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .advantages__item--with-image {
@@ -20,6 +26,7 @@
   color: #ffffff;
 
   @media (min-width: @tablet-width) {
+    grid-column: 1 / 4;
     display: grid;
     grid-template-columns: 1fr 512px;
   }
