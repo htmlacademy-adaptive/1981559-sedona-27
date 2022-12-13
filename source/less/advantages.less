@@ -30,6 +30,10 @@
     display: grid;
     grid-template-columns: 1fr 512px;
   }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 800px;
+  }
 }
 
 .advantages__title {
@@ -82,6 +86,10 @@
     .advantages__image {
       grid-column: 1 / 2;
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 800px 1fr;
   }
 }
 
