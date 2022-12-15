@@ -1,3 +1,10 @@
+.site-list {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
 .site-list__link {
   font-weight: 700;
   font-size: 18px;
@@ -5,4 +12,41 @@
   color: #ffffff;
   background-color: #81b3d2;
   text-decoration: none;
+  display: block;
+  padding-top: 17px;
+  padding-bottom: 12px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    line-height: 21px;
+    background-color: transparent;
+    color: #000000;
+    padding: 18px 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 50px;
+  }
+}
+
+.site-list__link--active {
+  color: #766357;
+}
+
+.site-list__link--logo {
+  margin: 0;
+  padding: 0;
+}
+
+//Лого сайта в списке. Прячем в мобилке, показываем на других устройствах.
+.site-list__item--logo {
+  display: none;
+  width: 185px;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    grid-column: 3 / 4;
+    margin-bottom: -40px;
+  }
 }

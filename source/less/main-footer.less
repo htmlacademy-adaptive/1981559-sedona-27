@@ -1,3 +1,22 @@
+.main-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  clear: both;
+
+  @media (min-width: @tablet-width) {
+    padding: 36px 0;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.main-footer__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 .main-footer__link {
   font-weight: 700;
   font-size: 21px;

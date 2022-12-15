@@ -1,11 +1,47 @@
+.catalog-presentation {
+  text-align: center;
+  padding: 0 18px;
+}
+
 .catalog-presentation__slogan {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 30px;
+  }
 }
 
 .catalog-presentation__text {
-  font-size: 18px;
-  line-height: 26px;
   color: #333333;
+  font-size: 12px;
+  line-height: 21px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+  }
+}
+
+.catalog-presentation__video-wrapper {
+  position: relative;
+}
+
+.catalog-presentation__play-button {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  transform: translate(-50%, -50%);
+  border-top: 27px solid transparent;
+  border-left: 48px solid  rgba(255, 255, 255, 0.7);
+  border-bottom: 27px solid transparent;
+  background-color: transparent;
 }
