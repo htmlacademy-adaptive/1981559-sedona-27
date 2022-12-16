@@ -48,8 +48,19 @@
 //Убираю черную полоску у последнего элемента списка меню
 .site-list__item:last-child .site-list__link {
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.2);
-}
+  position: relative;
 
+  //Дополнительно вешаю тень на последний блок
+  &:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 7px;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+  }
+}
 
 //Контейнер для лого сайта в списке, прячем в мобилке, показываем на других устройствах.
 .site-list__item--logo {
