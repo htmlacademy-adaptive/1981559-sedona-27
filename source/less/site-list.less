@@ -2,6 +2,8 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    //Исправление наложения лого на вторую строку при переполнении
+    row-gap: 42px;
   }
 }
 
@@ -34,19 +36,12 @@
   color: #766357;
 }
 
-.site-list__link--logo {
-  margin: 0;
-  padding: 0;
-}
-
-//Лого сайта в списке. Прячем в мобилке, показываем на других устройствах.
+//Контейнер для лого сайта в списке, прячем в мобилке, показываем на других устройствах.
 .site-list__item--logo {
   display: none;
-  width: 185px;
 
   @media (min-width: @tablet-width) {
     display: block;
     grid-column: 3 / 4;
-    margin-bottom: -40px;
   }
 }
