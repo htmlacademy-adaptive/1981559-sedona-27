@@ -1,3 +1,13 @@
+.main-nav {
+  position: relative;
+}
+
+.main-nav__wrapper {
+  position: absolute;
+  width: 100%;
+  top: -51px;
+}
+
 .main-nav__list {
   margin: 0;
   padding: 0;
@@ -25,8 +35,8 @@
 .main-nav__toggle {
   background-color: transparent;
   border: none;
-  position: fixed;
-  top: 17px;
+  position: absolute;
+  top: -39px;
   right: 20px;
   width: 23px;
   height: 22px;
@@ -81,6 +91,12 @@
 }
 
 .main-nav--nojs .main-nav__list {
+  display: block;
+  position: static;
+  margin-top: 50px;
+}
+
+.main-nav--nojs .main-nav__wrapper {
   display: block;
   position: static;
   margin-top: 50px;
