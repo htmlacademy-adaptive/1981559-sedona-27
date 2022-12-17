@@ -16,6 +16,10 @@
   margin: 0 18px 40px;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }
 
 .main-footer__link {
@@ -25,4 +29,14 @@
   color: #000000;
   text-decoration: none;
   margin: 0 18px 34px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
+}
+
+.main-footer__developed-by-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
