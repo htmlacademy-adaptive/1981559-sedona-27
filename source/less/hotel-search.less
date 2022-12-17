@@ -1,6 +1,12 @@
 .hotel-search {
   text-align: center;
   padding-top: 38px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .hotel-search__question {
@@ -17,7 +23,6 @@
 
   @media (min-width: @tablet-width) {
     max-width: 435px;
-    display: inline-block;
   }
 }
 
@@ -31,7 +36,6 @@
   margin: 0 18px 49px;
 
   @media (min-width: @tablet-width) {
-    display: inline-block;
     min-width: 458px;
   }
 }
