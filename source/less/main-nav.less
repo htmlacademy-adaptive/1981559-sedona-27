@@ -3,22 +3,23 @@
 }
 
 .main-nav__wrapper {
-  position: absolute;
-  width: 100%;
-  top: -51px;
+  @media (max-width: @mobile-width-only) {
+    position: absolute;
+    width: 100%;
+    top: -51px;
+  }
 }
 
 .main-nav__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
 
-  @media (min-width: @tablet-width) {
-    display: block;
+  @media (max-width: @mobile-width-only) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
   }
 }
 
