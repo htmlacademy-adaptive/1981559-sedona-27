@@ -10,6 +10,11 @@
   font-size: 18px;
   line-height: 26px;
   margin: 0 18px 35px;
+  max-width: 520px;
+
+  @media (min-width: @tablet-width) {
+    display: inline-block;
+  }
 }
 
 .advantages__text {
@@ -39,6 +44,7 @@
     grid-column: 1 / 4;
     display: grid;
     grid-template-columns: 1fr 512px;
+    padding: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -53,6 +59,7 @@
 
   @media (min-width: @tablet-width) {
     grid-column: 1 / 2;
+    margin-top: 52px;
   }
 }
 
@@ -122,6 +129,18 @@
 
   .advantages__description {
     padding-bottom: 24px;
+  }
+
+  @media (min-width: @tablet-width) {
+    .advantages__title {
+      max-width: 136px;
+      display: inline-block;
+    }
+
+    .advantages__description {
+      display: inline-block;
+      max-width: 190px;
+    }
   }
 }
 

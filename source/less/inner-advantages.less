@@ -15,24 +15,24 @@
 
 .inner-advantages__item {
   padding-top: 24px;
+  background-repeat: no-repeat;
+  background-position: 17px 15px;
+
+  @media (min-width: @tablet-width) {
+    background-position: 50% 50%;
+  }
 }
 
 .inner-advantages__item--housing {
   background-image: url("../img/main/advantages/housing.svg");
-  background-repeat: no-repeat;
-  background-position: 17px 15px;
 }
 
 .inner-advantages__item--food {
   background-image: url("../img/main/advantages/food.svg");
-  background-repeat: no-repeat;
-  background-position: 17px 15px;
 }
 
 .inner-advantages__item--gifts {
   background-image: url("../img/main/advantages/gifts.svg");
-  background-repeat: no-repeat;
-  background-position: 17px 15px;
 }
 
 .inner-advantages__title {
@@ -40,6 +40,10 @@
   line-height: 26px;
   margin: 0 18px 16px;
   padding-left: 47px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 158px;
+  }
 }
 
 .inner-advantages__description {
