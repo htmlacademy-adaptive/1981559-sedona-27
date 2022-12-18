@@ -7,6 +7,10 @@
     gap: 70px;
     padding: 0 60px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 120px;
+  }
 }
 
 .feedback-form__user-information {
@@ -198,6 +202,11 @@
     grid-column: span 2;
     justify-content: space-between;
     align-items: baseline;
+    max-width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 56px 96px;
   }
 }
 
@@ -212,6 +221,10 @@
   @media (min-width: @tablet-width) {
     width: 324px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 384px;
+  }
 }
 
 .feedback-form__description-for-requirements {
@@ -223,9 +236,5 @@
     line-height: 21px;
     color: #333333;
     justify-self: end;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-right: 184px;
   }
 }
