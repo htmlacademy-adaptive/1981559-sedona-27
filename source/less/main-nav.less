@@ -50,7 +50,7 @@
 
 .main-nav--closed .main-nav__toggle {
   //Бургер.
-  &:before {
+  &::before {
     content: "";
     position: absolute;
     width: 23px;
@@ -63,7 +63,7 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-  &:before {
+  &::before {
     content: "";
     position: absolute;
     width: 28px;
@@ -74,7 +74,7 @@
     transform: rotate(45deg);
   }
 
-  &:after {
+  &::after {
     content: "";
     position: absolute;
     width: 28px;
