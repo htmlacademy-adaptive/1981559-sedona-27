@@ -97,6 +97,37 @@
 .feedback-form__user-scoring {
   @media (min-width: @tablet-width) {
     grid-column: 1 / 3;
+
+    //Стилизация декоративной линии
+    .feedback-form__title {
+      position: relative;
+      width: 100%;
+      z-index: 0;
+
+      &::before {
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #dbdbdb;
+        z-index: -2;
+      }
+
+      //Подложка для текста
+      &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 50%;
+        width: 402px;
+        height: 100%;
+        background-color: #ffffff;
+        transform: translateX(-50%);
+        z-index: -1;
+      }
+    }
   }
 }
 
@@ -104,6 +135,37 @@
   @media (min-width: @tablet-width) {
     grid-column: 1 / 3;
     align-items: center;
+
+    //Стилизация декоративной линии
+    .feedback-form__title {
+      position: relative;
+      width: 100%;
+      z-index: 0;
+
+      &::before {
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #dbdbdb;
+        z-index: -2;
+      }
+
+      //Подложка для текста
+      &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 50%;
+        width: 402px;
+        height: 100%;
+        background-color: #ffffff;
+        transform: translateX(-50%);
+        z-index: -1;
+      }
+    }
   }
 }
 
