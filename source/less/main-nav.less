@@ -48,42 +48,38 @@
   }
 }
 
-.main-nav--closed .main-nav__toggle {
-  //Бургер.
-  &::before {
-    content: "";
-    position: absolute;
-    width: 23px;
-    height: 4px;
-    left: 0;
-    top: 0;
-    background-color: #81b3d2;
-    box-shadow: 0 9px #81b3d2, 0 18px #81b3d2;
-  }
+//Бургер.
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 4px;
+  left: 0;
+  top: 0;
+  background-color: #81b3d2;
+  box-shadow: 0 9px #81b3d2, 0 18px #81b3d2;
 }
 
-.main-nav--opened .main-nav__toggle {
-  &::before {
-    content: "";
-    position: absolute;
-    width: 28px;
-    height: 4px;
-    left: 0;
-    top: 50%;
-    background-color: #ffffff;
-    transform: rotate(45deg);
-  }
+.main-nav--opened .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 4px;
+  left: 0;
+  top: 50%;
+  background-color: #ffffff;
+  transform: rotate(45deg);
+}
 
-  &::after {
-    content: "";
-    position: absolute;
-    width: 28px;
-    height: 4px;
-    left: 0;
-    top: 50%;
-    background-color: #ffffff;
-    transform: rotate(-45deg);
-  }
+.main-nav--opened .main-nav__toggle::after {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 4px;
+  left: 0;
+  top: 50%;
+  background-color: #ffffff;
+  transform: rotate(-45deg);
 }
 
 //На случай отключенного JS
