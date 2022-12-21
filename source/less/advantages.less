@@ -143,21 +143,23 @@
       display: none;
     }
   }
+}
 
-  .advantages__description {
-    padding-bottom: 24px;
-  }
+.advantages__item--without-image .advantages__description {
+  padding-bottom: 24px;
+}
 
+.advantages__item--without-image .advantages__title {
   @media (min-width: @tablet-width) {
-    .advantages__title {
-      max-width: 136px;
-      display: inline-block;
-    }
+    max-width: 136px;
+    display: inline-block;
+  }
+}
 
-    .advantages__description {
-      display: inline-block;
-      max-width: 190px;
-    }
+.advantages__item--without-image .advantages__description {
+  @media (min-width: @tablet-width) {
+    display: inline-block;
+    max-width: 190px;
   }
 }
 
