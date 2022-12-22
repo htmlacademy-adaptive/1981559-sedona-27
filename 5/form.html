@@ -60,7 +60,7 @@
       <p class="feedback-header__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
     </header>
     <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
-      <fieldset class="feedback-form__user feedback-form__user-information">
+      <fieldset class="feedback-form__user feedback-form__user--information">
         <legend class="feedback-form__title">Представьтесь:</legend>
         <label class="feedback-form__label" for="feedback-name">ИМЯ*:</label>
         <input class="feedback-form__input" id="feedback-name" name="feedback-name" type="text" placeholder="Имя" value="Пётр" required>
@@ -72,7 +72,7 @@
         <input class="feedback-form__input" id="feedback-patronymic" name="feedback-patronymic" placeholder="Отчество" value="Викторович" type="text">
       </fieldset>
 
-      <fieldset class="feedback-form__user feedback-form__user-contact">
+      <fieldset class="feedback-form__user feedback-form__user--contact">
         <legend class="feedback-form__title">Контактная информация:</legend>
         <label class="feedback-form__label" for="feedback-phone">Контактный телефон*:</label>
         <input class="feedback-form__input feedback-form__input--phone" id="feedback-phone" name="feedback-phone" type="tel" placeholder="Введите телефон" required>
@@ -81,7 +81,7 @@
         <input class="feedback-form__input feedback-form__input--e-mail" id="feedback-e-mail" name="feedback-e-mail" type="email" placeholder="Введите e-mail" required>
       </fieldset>
 
-      <fieldset class="feedback-form__user feedback-form__user-scoring radio-select">
+      <fieldset class="feedback-form__user feedback-form__user--scoring radio-select">
         <legend class="feedback-form__title">Ваше общее впечатление:</legend>
         <ul class="radio-select__list">
           <li class="radio-select__item">
@@ -108,8 +108,8 @@
         </ul>
       </fieldset>
 
-      <fieldset class="feedback-form__user feedback-form__user-scoring checkbox-select">
-        <legend class="feedback-form__title">Посещенные<br> достопримечательности:</legend>
+      <fieldset class="feedback-form__user feedback-form__user--scoring checkbox-select">
+        <legend class="feedback-form__title">Посещенные достопримечательности:</legend>
         <ul class="checkbox-select__ist">
           <li class="checkbox-select__item">
             <label class="checkbox-select__label">
@@ -142,7 +142,7 @@
         </ul>
       </fieldset>
 
-      <fieldset class="feedback-form__user feedback-form__user-text-place">
+      <fieldset class="feedback-form__user feedback-form__user--text-place">
         <legend class="feedback-form__title">Опишите свои эмоции:</legend>
         <label class="visually-hidden" for="user-text">Поле описания своих эмоций.</label>
         <textarea class="feedback-form__user-text" id="user-text" name="user-text" placeholder="Опишите подробно все свои восторги"></textarea>
@@ -150,7 +150,7 @@
 
       <div class="feedback-form__button-container">
         <button class="feedback-form__button button" type="submit">
-          ОТПРАВИТЬ ОТЗЫВ
+          Отправить отзыв
         </button>
 
         <span class="feedback-form__description-for-requirements">
@@ -182,7 +182,7 @@
         </a>
       </li>
     </ul>
-    <a class="main-footer__developed-by-link special-link special-link" href="#">
+    <a class="main-footer__developed-by-link special-link" href="#">
       Разработано
       <svg class="special-link__icon" width="27" height="35" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" fill="#000"/></svg>
     </a>
