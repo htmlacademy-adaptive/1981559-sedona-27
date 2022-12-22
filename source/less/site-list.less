@@ -1,7 +1,14 @@
 .site-list {
+  @media (max-width: @mobile-width-only) {
+    background-color: #81b3d2;
+  }
+
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    //Исправление наложения лого на вторую строку при переполнении
+    row-gap: 42px;
+    background-color: #ffffff;
   }
 }
 
@@ -13,9 +20,12 @@
   background-color: #81b3d2;
   text-decoration: none;
   display: block;
-  padding-top: 17px;
-  padding-bottom: 12px;
+  padding: 17px 50px 12px;
   text-align: center;
+
+  @media (max-width: @mobile-width-only) {
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), inset 0 -1px rgba(1, 1, 1, 0.2);
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 14px;
@@ -30,23 +40,46 @@
   }
 }
 
-.site-list__link--active {
-  color: #766357;
+//Убираю белую полоску у первого элемента списка меню
+.site-list__item:first-child .site-list__link {
+  @media (max-width: @mobile-width-only) {
+    box-shadow: inset 0 -1px rgba(1, 1, 1, 0.2);
+  }
 }
 
-.site-list__link--logo {
-  margin: 0;
-  padding: 0;
+//Убираю черную полоску у последнего элемента списка меню
+.site-list__item:last-child .site-list__link {
+  @media (max-width: @mobile-width-only) {
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.2);
+    position: relative;
+  }
 }
 
-//Лого сайта в списке. Прячем в мобилке, показываем на других устройствах.
+//Дополнительно вешаю тень на последний блок
+.site-list__item:last-child .site-list__link::before {
+  @media (max-width: @mobile-width-only) {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 7px;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+  }
+}
+
+//Контейнер для лого сайта в списке, прячем в мобилке, показываем на других устройствах.
 .site-list__item--logo {
   display: none;
-  width: 185px;
 
   @media (min-width: @tablet-width) {
     display: block;
     grid-column: 3 / 4;
-    margin-bottom: -40px;
+  }
+}
+
+.site-list__link--active {
+  @media (min-width: @tablet-width) {
+    color: #766357;
   }
 }

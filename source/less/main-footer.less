@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  clear: both;
+  padding: 24px 18px;
 
   @media (min-width: @tablet-width) {
     padding: 36px 0;
@@ -12,9 +12,13 @@
 }
 
 .main-footer__list {
-  margin: 0;
+  margin: 0 18px 40px;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }
 
 .main-footer__link {
@@ -23,4 +27,15 @@
   line-height: 26px;
   color: #000000;
   text-decoration: none;
+  margin: 0 18px 34px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
+}
+
+.main-footer__developed-by-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }

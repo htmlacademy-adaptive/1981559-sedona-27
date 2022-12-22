@@ -4,9 +4,17 @@
   padding: 0;
 
   @media (min-width: @tablet-width) {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
+    margin: 0 84px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    justify-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 53px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
   }
 }
 
