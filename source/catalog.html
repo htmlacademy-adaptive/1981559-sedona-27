@@ -5,6 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <title>Каталог</title>
+  <!--  favicons start-->
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="img/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <!--  favicons end-->
 </head>
 <body>
 <div class="site-wrapper">
@@ -45,7 +65,7 @@
         </ul>
       </div>
     </nav>
-    <section class="hero">
+    <section class="hero hero--other-pages">
       <h1 class="visually-hidden">Добро пожаловать в Седону.</h1>
       <div class="hero__wrapper hero__wrapper--other-pages">
         <img class="hero__content hero__content--other-pages" src="img/header/hero-other-pages.svg" width="460" height="80" alt="Добро пожаловать в Седону.">
@@ -64,7 +84,11 @@
       <h3 class="visually-hidden">Список фото-карточек.</h3>
       <ul class="catalog-preview__list">
         <li class="catalog-preview__item catalog-preview__item--top-card">
-          <img class="catalog-preview__image" src="img/catalog/cards/photo-1-mobile.jpg" width="280" height="280" alt="Неродные просторы.">
+          <picture>
+            <source media="(min-width: 1280px)" srcset="img/catalog/cards/photo-1-desktop.jpg 1x, img/catalog/cards/photo-1-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/catalog/cards/photo-1-tablet.jpg 1x, img/catalog/cards/photo-1-tablet@2x.jpg 2x">
+            <img src="img/catalog/cards/photo-1-mobile.jpg" srcset="img/catalog/cards/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы.">
+          </picture>
           <div class="catalog-preview__description-wrapper">
             <h4 class="catalog-preview__title">Неродные просторы</h4>
             <cite class="catalog-preview__author">Автор фото: Борис</cite>
@@ -75,7 +99,11 @@
           </div>
         </li>
         <li class="catalog-preview__item">
-          <img class="catalog-preview__image" src="img/catalog/cards/photo-2-mobile.jpg" width="280" height="280" alt="Местная растительность.">
+          <picture>
+            <source media="(min-width: 1280px)" srcset="img/catalog/cards/photo-2-desktop.jpg 1x, img/catalog/cards/photo-2-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/catalog/cards/photo-2-tablet.jpg 1x, img/catalog/cards/photo-2-tablet@2x.jpg 2x">
+            <img src="img/catalog/cards/photo-2-mobile.jpg" srcset="img/catalog/cards/photo-2-mobile@2x.jpg 2x" width="280" height="280" alt="Местная растительность.">
+          </picture>
           <div class="catalog-preview__description-wrapper">
             <h4 class="catalog-preview__title">Местная растительность</h4>
             <cite class="catalog-preview__author">Автор фото: Сергей</cite>
@@ -86,7 +114,11 @@
           </div>
         </li>
         <li class="catalog-preview__item catalog-preview__item--low-ratting-card">
-          <img class="catalog-preview__image" src="img/catalog/cards/photo-3-mobile.jpg" width="280" height="280" alt="Дорога на север.">
+          <picture>
+            <source media="(min-width: 1280px)" srcset="img/catalog/cards/photo-3-desktop.jpg 1x, img/catalog/cards/photo-3-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/catalog/cards/photo-3-tablet.jpg 1x, img/catalog/cards/photo-3-tablet@2x.jpg 2x">
+            <img src="img/catalog/cards/photo-3-mobile.jpg" srcset="img/catalog/cards/photo-3-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога на север.">
+          </picture>
           <div class="catalog-preview__description-wrapper">
             <h4 class="catalog-preview__title">Дорога на север</h4>
             <cite class="catalog-preview__author">Автор фото: Петр</cite>
@@ -97,7 +129,11 @@
           </div>
         </li>
         <li class="catalog-preview__item">
-          <img class="catalog-preview__image" src="img/catalog/cards/photo-4-mobile.jpg" width="280" height="280" alt="Мост дьявола.">
+          <picture>
+            <source media="(min-width: 1280px)" srcset="img/catalog/cards/photo-4-desktop.jpg 1x, img/catalog/cards/photo-4-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/catalog/cards/photo-4-tablet.jpg 1x, img/catalog/cards/photo-4-tablet@2x.jpg 2x">
+            <img src="img/catalog/cards/photo-4-mobile.jpg" srcset="img/catalog/cards/photo-4-mobile@2x.jpg 2x" width="280" height="280" alt="Мост дьявола.">
+          </picture>
           <div class="catalog-preview__description-wrapper">
             <h4 class="catalog-preview__title">Мост дьявола</h4>
             <cite class="catalog-preview__author">Автор фото: Антон</cite>
@@ -116,7 +152,11 @@
         Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
       </p>
       <div class="catalog-presentation__video-wrapper">
-        <img class="catalog-presentation__video" src="img/catalog/cards/video-mobile.jpg" width="280" height="177" alt="Видеопрезентация">
+        <picture>
+          <source media="(min-width: 1280px)" srcset="img/catalog/cards/video-desktop.jpg 1x, img/catalog/cards/video-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/catalog/cards/video-tablet.jpg 1x, img/catalog/cards/video-tablet@2x.jpg 2x">
+          <img src="img/catalog/cards/video-mobile.jpg" srcset="img/catalog/cards/video-mobile@2x.jpg 2x" width="280" height="177" alt="Видеопрезентация.">
+        </picture>
         <button class="catalog-presentation__play-button" type="button">
           <span class="visually-hidden">Запуск видео.</span>
         </button>

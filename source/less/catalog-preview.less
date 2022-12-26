@@ -67,9 +67,32 @@
   }
 }
 
-.catalog-preview__image {
-  margin-bottom: 14px;
-  align-self: center;
+.catalog-preview__item img {
+  display: block;
+
+  @media (max-width: @mobile-width-only) {
+    margin-bottom: 14px;
+  }
+
+  @media (min-width: @tablet-width) {
+    min-width: 324px;
+    height: 267px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 400px;
+  }
+}
+
+.catalog-preview__item--top-card img {
+  @media (min-width: @tablet-width) {
+    min-width: 648px;
+    height: 400px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
 }
 
 .catalog-preview__description-wrapper {

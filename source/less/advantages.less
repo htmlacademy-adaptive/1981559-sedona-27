@@ -80,12 +80,23 @@
   }
 }
 
-.advantages__image {
-  display: block;
-
+.advantages__image-container {
   @media (min-width: @tablet-width) {
     grid-column: 2 / 3;
     grid-row: 1 / 4;
+  }
+}
+
+.advantages__image-container img {
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    min-width: 512px;
+    height: 256px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 800px;
   }
 }
 
@@ -117,7 +128,7 @@
   }
 }
 
-.advantages__item--inverted .advantages__image {
+.advantages__item--inverted .advantages__image-container {
   @media (min-width: @tablet-width) {
     grid-column: 1 / 2;
   }
