@@ -100,8 +100,10 @@
         <input class="feedback-form__input feedback-form__input--e-mail" id="feedback-e-mail" name="feedback-e-mail" type="email" placeholder="Введите e-mail" required>
       </fieldset>
 
-      <fieldset class="feedback-form__user feedback-form__user--scoring radio-select">
-        <legend class="feedback-form__title">Ваше общее впечатление:</legend>
+      <div class="feedback-form__user feedback-form__user--scoring radio-select" role="group" aria-describedby="radio-legend">
+        <div class="feedback-form__title-wrapper">
+          <div class="feedback-form__title" id="radio-legend">Ваше общее впечатление:</div>
+        </div>
         <ul class="radio-select__list">
           <li class="radio-select__item">
             <label class="radio-select__label">
@@ -125,10 +127,12 @@
             </label>
           </li>
         </ul>
-      </fieldset>
+      </div>
 
-      <fieldset class="feedback-form__user feedback-form__user--scoring checkbox-select">
-        <legend class="feedback-form__title">Посещенные достопримечательности:</legend>
+      <div class="feedback-form__user feedback-form__user--scoring checkbox-select" role="group" aria-describedby="checkbox-legend">
+        <div class="feedback-form__title-wrapper">
+          <div class="feedback-form__title" id="checkbox-legend">Посещенные достопримечательности:</div>
+        </div>
         <ul class="checkbox-select__ist">
           <li class="checkbox-select__item">
             <label class="checkbox-select__label">
@@ -159,13 +163,15 @@
             </label>
           </li>
         </ul>
-      </fieldset>
+      </div>
 
-      <fieldset class="feedback-form__user feedback-form__user--text-place">
-        <legend class="feedback-form__title">Опишите свои эмоции:</legend>
+      <div class="feedback-form__user feedback-form__user--text-place" role="group" aria-describedby="text-place-legend">
+        <div class="feedback-form__title-wrapper">
+          <div class="feedback-form__title" id="text-place-legend">Опишите свои эмоции:</div>
+        </div>
         <label class="visually-hidden" for="user-text">Поле описания своих эмоций.</label>
         <textarea class="feedback-form__user-text" id="user-text" name="user-text" placeholder="Опишите подробно все свои восторги"></textarea>
-      </fieldset>
+      </div>
 
       <div class="feedback-form__button-container">
         <button class="feedback-form__button button" type="submit">

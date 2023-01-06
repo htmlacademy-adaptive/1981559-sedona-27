@@ -1,6 +1,4 @@
 .feedback-form {
-  padding: 0 18px;
-
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -11,6 +9,18 @@
   @media (min-width: @desktop-width) {
     padding: 0 120px;
   }
+}
+
+.feedback-form__user {
+  margin: 24px 0 0;
+  border: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-form__user > *:not(:first-child) {
+  margin: 0 20px;
 }
 
 .feedback-form__user--information {
@@ -31,15 +41,38 @@
   }
 }
 
+.feedback-form__user--information {
+  padding-bottom: 39px;
+}
+
 .feedback-form__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-align: center;
-  margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
     font-size: 21px;
+    background-color: #ffffff;
+  }
+}
+
+//Декоративная полоска для легенды
+@media (min-width: @tablet-width) {
+  .feedback-form__title-wrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: #dbdbdb;
+      top: 50%;
+      left: 0;
+    }
   }
 }
 
@@ -57,7 +90,6 @@
   border: none;
   margin-bottom: 16px;
   padding: 16px;
-  width: 100%;
   box-sizing: border-box;
 }
 
@@ -75,15 +107,15 @@
   padding-right: 63px;
 }
 
-.feedback-form__user {
-  margin: 24px 0 0;
-  border: none;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
+//Декоративная полоска внизу fieldset
+@media (max-width: @mobile-width-only) {
+  .feedback-form__user:not(:nth-last-child(2)) {
+    box-shadow: inset 0 -1px #e5e5e5;
+  }
 }
 
 .feedback-form__user--contact {
+  padding-bottom: 34px;
   @media (min-width: @tablet-width) {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
@@ -97,6 +129,7 @@
 }
 
 .feedback-form__user--scoring {
+  padding-bottom: 24px;
   @media (min-width: @tablet-width) {
     grid-column: 1 / 3;
   }
@@ -114,7 +147,6 @@
 .feedback-form__user--text-place {
   @media (min-width: @tablet-width) {
     grid-column: 1 / 3;
-    align-items: center;
   }
 }
 
@@ -134,8 +166,8 @@
   border: none;
   padding: 16px;
   resize: none;
-  width: 100%;
   box-sizing: border-box;
+  align-self: center;
 
   @media (min-width: @desktop-width) {
     width: 768px;
@@ -144,11 +176,10 @@
 
 .feedback-form__button-container {
   display: flex;
-  margin-top: 56px;
+  margin: 56px 20px 0;
 
   @media (max-width: @mobile-width-only) {
     flex-direction: column;
-    align-items: flex-end;
     gap: 3px;
   }
 
@@ -170,7 +201,6 @@
   color: #ffffff;
   background-color: #81b3d2;
   padding: 16px;
-  width: 100%;
 
   @media (min-width: @tablet-width) {
     width: 324px;
@@ -184,6 +214,7 @@
 .feedback-form__description-for-requirements {
   font-size: 12px;
   color: rgba(51, 51, 51, 0.6);
+  align-self: end;
 
   @media (min-width: @tablet-width) {
     font-size: 14px;
