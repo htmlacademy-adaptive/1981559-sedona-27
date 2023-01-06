@@ -1,7 +1,13 @@
-.checkbox-select__ist {
+.checkbox-select__list {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 20px 0 0;
+
+  @media (max-width: @mobile-width-only) {
+    display: grid;
+    flex-direction: column;
+    gap: 16px;
+  }
 
   @media (min-width: @tablet-width) {
     margin: 0 84px;
@@ -23,4 +29,27 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: initial;
+  padding: 10px 0 10px 62px;
+  position: relative;
+  display: inline-block;
+}
+
+.checkbox-select__mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 46px;
+  height: 46px;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+}
+
+.checkbox-select__input[type="checkbox"]:checked + .checkbox-select__mark::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 46px;
+  height: 46px;
+  background-image: url("../img/form/checkbox-select__mark.svg");
 }
