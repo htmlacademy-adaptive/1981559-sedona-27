@@ -13,23 +13,21 @@
     grid-template-columns: repeat(3, 1fr);
     list-style-type: none;
     text-align: center;
+    padding: 23px 0 60px;
   }
 }
 
 .inner-advantages__item {
   background-repeat: no-repeat;
   background-position: 18px 0;
-
-  @media (min-width: @tablet-width) {
-    background-position: 50% 50%;
-  }
 }
 
 .inner-advantages__item--housing {
   background-image: url("../img/main/advantages/housing.svg");
 
   @media (min-width: @tablet-width) {
-    background-size: 77px 72px;
+    background-size: 79px 79px;
+    background-position: 55% 20%;
   }
 
   @media (min-width: @desktop-width) {
@@ -41,23 +39,12 @@
   background-image: url("../img/main/advantages/food.svg");
 
   @media (min-width: @tablet-width) {
-    background-size: 80px 68px;
+    background-size: 83px 77px;
+    background-position: 49% 20%;
   }
 
   @media (min-width: @desktop-width) {
     background-size: 73px 69px;
-  }
-}
-
-.inner-advantages__item--gifts {
-  background-image: url("../img/main/advantages/gifts.svg");
-
-  @media (min-width: @tablet-width) {
-    background-size: 66px 75px;
-  }
-
-  @media (min-width: @desktop-width) {
-    background-size: 77px 75px;
   }
 }
 
@@ -71,8 +58,32 @@
   }
 
   @media (min-width: @tablet-width) {
-    margin-top: 158px;
+    font-size: 21px;
+    margin: 135px 20px 23px 37px;
   }
+}
+
+.inner-advantages__item--food .inner-advantages__title {
+  @media (min-width: @tablet-width) {
+    margin: 133px 37px 23px 37px;
+  }
+}
+
+.inner-advantages__item--gifts {
+  background-image: url("../img/main/advantages/gifts.svg");
+
+  @media (min-width: @tablet-width) {
+    background-size: 83px 78px;
+    background-position: 46% 23%;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-size: 77px 75px;
+  }
+}
+
+.inner-advantages__item--gifts .inner-advantages__title {
+  margin: 130px 40px 23px 20px;
 }
 
 .inner-advantages__description {
@@ -91,5 +102,17 @@
 
   @media (min-width: @desktop-width) {
     max-width: 300px;
+  }
+}
+
+.inner-advantages__item--housing .inner-advantages__description {
+  @media (min-width: @tablet-width) {
+    margin: 0 18px 0 35px;
+  }
+ }
+
+.inner-advantages__item--gifts .inner-advantages__description {
+  @media (min-width: @tablet-width) {
+    margin: 0 48px 0 27px;
   }
 }
