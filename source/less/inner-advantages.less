@@ -15,6 +15,10 @@
     text-align: center;
     padding: 23px 0 60px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 68px;
+  }
 }
 
 .inner-advantages__item {
@@ -31,7 +35,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    background-size: 79px 72px;
+    background-size: 83px 78px;
+    background-position: 53% 27%;
   }
 }
 
@@ -44,7 +49,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    background-size: 73px 69px;
+    background-position: 49% 28%;
+    background-size: 74px 78px;
   }
 }
 
@@ -61,11 +67,19 @@
     font-size: 21px;
     margin: 135px 20px 23px 37px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin: 147px 20px 23px 37px;
+  }
 }
 
 .inner-advantages__item--food .inner-advantages__title {
   @media (min-width: @tablet-width) {
     margin: 133px 37px 23px 37px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 144px 39px 23px 37px;
   }
 }
 
@@ -78,13 +92,19 @@
   }
 
   @media (min-width: @desktop-width) {
-    background-size: 77px 75px;
+    background-size: 95px 78px;
+    background-position: 46% 28%;
   }
 }
 
-@media (min-width: @tablet-width) {
-  .inner-advantages__item--gifts .inner-advantages__title {
+
+.inner-advantages__item--gifts .inner-advantages__title {
+  @media (min-width: @tablet-width) {
     margin: 130px 40px 23px 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 148px 38px 23px 20px;
   }
 }
 
@@ -111,10 +131,18 @@
   @media (min-width: @tablet-width) {
     margin: 0 18px 0 35px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 35px 0 52px;
+  }
  }
 
 .inner-advantages__item--gifts .inner-advantages__description {
   @media (min-width: @tablet-width) {
     margin: 0 48px 0 27px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 73px 0 54px;
   }
 }
