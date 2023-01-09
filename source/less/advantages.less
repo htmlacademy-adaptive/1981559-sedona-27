@@ -107,6 +107,7 @@
   @media (min-width: @tablet-width) {
     grid-column: 1 / 2;
     padding-bottom: 31px;
+    margin: 0 23px 0;
   }
 }
 
@@ -181,6 +182,8 @@
   }
 
   @media (min-width: @tablet-width) {
+    padding: 24px 0 41px;
+
     &::after {
       display: none;
     }
@@ -191,6 +194,20 @@
   @media (min-width: @tablet-width) {
     max-width: 136px;
     display: inline-block;
+    margin-top: 30px;
+  }
+}
+
+//Для pixelperfect
+.advantages__item--without-image:nth-child(4) .advantages__title {
+  @media (min-width: @tablet-width) {
+    margin-top: 19px;
+  }
+}
+
+.advantages__item--without-image:nth-child(4) .advantages__description {
+  @media (min-width: @tablet-width) {
+    max-width: 180px;
   }
 }
 
