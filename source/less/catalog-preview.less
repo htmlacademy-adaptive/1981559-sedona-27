@@ -119,6 +119,7 @@
     width: 100%;
     box-sizing: border-box;
     padding-left: 25px;
+    padding-top: 18px;
   }
 }
 
@@ -128,6 +129,16 @@
   @media (min-width: @tablet-width) {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 5px;
+  }
+}
+
+.catalog-preview__item--top-card .catalog-preview__title {
+  @media (min-width: @desktop-width) {
+    margin-bottom: 1px;
   }
 }
 
@@ -168,7 +179,12 @@
 
   @media (min-width: @desktop-width) {
     color: #ffffff;
+    margin-top: 4px;
   }
 }
 
-/
+.catalog-preview__item--top-card .catalog-preview__like-button {
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
+  }
+}
