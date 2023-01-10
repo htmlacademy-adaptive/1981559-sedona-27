@@ -1,6 +1,6 @@
 .catalog-header {
   text-align: center;
-  padding: 37px 18px 80px;
+  padding: 37px 18px 37px;
 
   @media (max-width: @mobile-width-only) {
     position: relative;
@@ -15,6 +15,14 @@
       background-color: #e5e5e5;
     }
   }
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 80px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 88px;
+  }
 }
 
 .catalog-header__title {
@@ -27,6 +35,10 @@
     line-height: 26px;
     margin-top: 29px;
     margin-bottom: 33px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 61px;
   }
 }
 
