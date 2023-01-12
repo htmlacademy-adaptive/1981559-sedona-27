@@ -77,3 +77,50 @@
 .modal--failure {
   display: none;
 }
+
+.modal--feedback-sent .modal__window {
+  padding: 45px 0 0;
+  width: 320px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 162px;
+    width: 640px;
+    max-width: unset;
+  }
+}
+
+.modal--feedback-sent .modal__large-text {
+  @media (min-width: @tablet-width) {
+    width: 340px;
+  }
+}
+
+.modal--feedback-sent .modal__description {
+  max-width: 257px;
+  margin-bottom: 52px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 412px;
+  }
+}
+
+.modal__button-wrapper {
+  background-color: #f2f2f2;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    padding: 44px 91px;
+  }
+}
+
+.modal--feedback-sent .modal__button  {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
+}
