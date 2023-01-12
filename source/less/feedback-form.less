@@ -11,6 +11,7 @@
 
   @media (min-width: @desktop-width) {
     padding: 0 120px;
+    gap: 17px 77px;
   }
 }
 
@@ -46,6 +47,24 @@
       width: 1px;
       background-color: #dbdbdb;
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      right: -12%;
+    }
+  }
+}
+
+.feedback-form__user--information .feedback-form__title {
+  @media (min-width: @desktop-width) {
+    margin-left: 26px
+  }
+}
+
+.feedback-form__user--information .feedback-form__input {
+  @media (min-width: @desktop-width) {
+    width: 97%;
   }
 }
 
@@ -158,10 +177,15 @@
 
 .feedback-form__user--contact .feedback-form__title {
   @media (min-width: @tablet-width) {
-    margin-left: -20px;
+    margin-left: -33px;
   }
 }
 
+.feedback-form__user--contact .feedback-form__input {
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }
+}
 .feedback-form__user:last-of-type::after {
   @media (max-width: @mobile-width-only) {
     display: none;
@@ -179,6 +203,10 @@
   &:nth-of-type(2) {
     margin-top: 16px;
     padding-bottom: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 40px;
   }
 }
 
