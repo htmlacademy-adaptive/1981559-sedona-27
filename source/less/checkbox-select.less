@@ -41,6 +41,14 @@
   cursor: pointer;
 }
 
+.checkbox-select__label:hover .checkbox-select__mark {
+  background-color: #e5e5e5;
+}
+
+.checkbox-select__label:active .checkbox-select__mark {
+  background-color: #d5d5d5;
+}
+
 .checkbox-select__mark {
   position: absolute;
   top: 0;
@@ -59,4 +67,12 @@
   width: 46px;
   height: 46px;
   background-image: url("../img/form/checkbox-select__mark.svg");
+}
+
+.checkbox-select__input[type="checkbox"]:checked:active + .checkbox-select__mark::before {
+  opacity: 0.3;
+}
+
+.checkbox-select__input[type="checkbox"]:checked:focus + .checkbox-select__mark::before {
+  opacity: 0.3;
 }
