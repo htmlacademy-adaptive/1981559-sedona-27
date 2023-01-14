@@ -2,7 +2,7 @@
   font-size: 18px;
   line-height: 26px;
   text-align: center;
-  padding: 36px 20px;
+  margin: 36px 20px 24px;
 
   @media (max-width: @mobile-width-only) {
     position: relative;
@@ -10,7 +10,13 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding: 64px 60px;
+    margin-top: 65px;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 113px;
+    margin-bottom: 28px;
   }
 }
 
@@ -33,6 +39,12 @@
 
   @media (min-width: @tablet-width) {
     font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 30px;
+    margin-bottom: 29px;
   }
 }
 

@@ -2,7 +2,10 @@
   color: #000000;
   background-color: #ffffff;
   text-align: start;
-  padding-bottom: 46px;
+  padding: 23px 0 44px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
 
   @media (min-width: @tablet-width) {
     grid-column: 1 / 3;
@@ -10,42 +13,98 @@
     grid-template-columns: repeat(3, 1fr);
     list-style-type: none;
     text-align: center;
+    padding: 23px 0 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 68px;
   }
 }
 
 .inner-advantages__item {
-  padding-top: 24px;
   background-repeat: no-repeat;
-  background-position: 17px 15px;
-
-  @media (min-width: @tablet-width) {
-    background-position: 50% 50%;
-  }
+  background-position: 18px 0;
 }
 
 .inner-advantages__item--housing {
   background-image: url("../img/main/advantages/housing.svg");
+
+  @media (min-width: @tablet-width) {
+    background-size: 79px 79px;
+    background-position: 55% 20%;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-size: 83px 78px;
+    background-position: 53% 27%;
+  }
 }
 
 .inner-advantages__item--food {
   background-image: url("../img/main/advantages/food.svg");
-}
 
-.inner-advantages__item--gifts {
-  background-image: url("../img/main/advantages/gifts.svg");
+  @media (min-width: @tablet-width) {
+    background-size: 83px 77px;
+    background-position: 49% 20%;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-position: 49% 28%;
+    background-size: 74px 78px;
+  }
 }
 
 .inner-advantages__title {
   font-size: 18px;
   line-height: 26px;
-  margin: 0 18px 16px;
+  margin: 8px 18px 16px;
 
   @media (max-width: @mobile-width-only) {
     padding-left: 47px;
   }
 
   @media (min-width: @tablet-width) {
-    margin-top: 158px;
+    font-size: 21px;
+    margin: 135px 20px 23px 37px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 147px 20px 23px 37px;
+  }
+}
+
+.inner-advantages__item--food .inner-advantages__title {
+  @media (min-width: @tablet-width) {
+    margin: 133px 37px 23px 37px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 144px 39px 23px 37px;
+  }
+}
+
+.inner-advantages__item--gifts {
+  background-image: url("../img/main/advantages/gifts.svg");
+
+  @media (min-width: @tablet-width) {
+    background-size: 83px 78px;
+    background-position: 46% 23%;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-size: 95px 78px;
+    background-position: 46% 28%;
+  }
+}
+
+
+.inner-advantages__item--gifts .inner-advantages__title {
+  @media (min-width: @tablet-width) {
+    margin: 130px 40px 23px 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 148px 38px 23px 20px;
   }
 }
 
@@ -65,5 +124,34 @@
 
   @media (min-width: @desktop-width) {
     max-width: 300px;
+  }
+}
+
+.inner-advantages__item--housing .inner-advantages__description {
+  @media (min-width: @tablet-width) {
+    margin: 0 18px 0 35px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 35px 0 52px;
+  }
+}
+
+.inner-advantages__item--gifts .inner-advantages__description {
+  @media (min-width: @tablet-width) {
+    margin: 0 48px 0 27px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 73px 0 54px;
+  }
+}
+
+//Для pixelperfect перенос строки
+.inner-advantages__line-break {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
   }
 }

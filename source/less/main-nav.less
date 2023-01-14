@@ -17,7 +17,7 @@
 
   @media (max-width: @mobile-width-only) {
     position: absolute;
-    top: 0;
+    top: -5px;
     left: 0;
     width: 100%;
   }
@@ -37,11 +37,19 @@
   background-color: transparent;
   border: none;
   position: absolute;
-  top: -39px;
-  right: 20px;
+  top: -41px;
+  right: 22px;
   width: 23px;
   height: 22px;
-  z-index: 1;
+  z-index: 2;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: @tablet-width) {
     display: none;

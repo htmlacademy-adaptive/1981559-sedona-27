@@ -7,25 +7,35 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  margin: 17px 0 26px;
 
   @media (min-width: @tablet-width) {
-    font-size: 21px;
+    font-size: 30px;
+    margin-top: 56px;
+    margin-bottom: 31px;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 30px;
+    margin-top: 60px;
   }
 }
 
 .catalog-presentation__text {
   color: #333333;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 21px;
-  max-width: 444px;
+  margin: 0 24px 39px;
 
   @media (min-width: @tablet-width) {
     font-size: 14px;
     display: inline-block;
+    max-width: 443px;
+    margin-bottom: 90px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 88px;
   }
 }
 
@@ -56,5 +66,6 @@
   border-top: 27px solid transparent;
   border-left: 48px solid  rgba(255, 255, 255, 0.7);
   border-bottom: 27px solid transparent;
+  border-right: 0;
   background-color: transparent;
 }
