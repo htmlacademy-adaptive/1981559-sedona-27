@@ -20,6 +20,16 @@
     top: -5px;
     left: 0;
     width: 100%;
+    background-color: #81b3d2;
+    z-index: 1;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    //Исправление наложения лого на вторую строку при переполнении
+    row-gap: 42px;
+    background-color: #ffffff;
   }
 }
 
@@ -96,13 +106,18 @@
 }
 
 .main-nav--nojs .main-nav__list {
-  display: block;
+  @media (max-width: @mobile-width-only) {
+    display: block;
+    margin-top: 50px;
+  }
   position: static;
-  margin-top: 50px;
 }
 
 .main-nav--nojs .main-nav__wrapper {
   display: block;
-  position: static;
-  margin-top: 50px;
+
+  @media (max-width: @mobile-width-only) {
+    position: static;
+    margin-top: 50px;
+  }
 }
