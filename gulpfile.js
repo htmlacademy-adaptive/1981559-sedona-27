@@ -11,6 +11,7 @@ import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import del from 'del';
 import browser from 'browser-sync';
+import htmlmin from 'gulp-htmlmin';
 
 // Styles
 
@@ -22,15 +23,18 @@ export const styles = () => {
       autoprefixer(),
       csso()
     ]))
-    .pipe (rename('style.min.css'))
+    .pipe(rename('style.min.css'))
     .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
 
 // HTML
 
-const html = () => {
+export const html = () => {
   return gulp.src('source/*.html')
+    .pipe(htmlmin({
+      removeComments: true,
+      collapseWhitespace: true }))
     .pipe(gulp.dest('build'));
 }
 
