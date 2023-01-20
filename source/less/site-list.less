@@ -1,3 +1,20 @@
+.site-list {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.site-list__item {
+  @media (min-width: @tablet-width) {
+    width: 153px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 240px;
+  }
+}
+
 .site-list__link {
   font-weight: 700;
   font-size: 18px;
@@ -72,13 +89,15 @@
   }
 }
 
-//Контейнер для лого сайта в списке, прячем в мобилке, показываем на других устройствах.
-.site-list__item--logo {
-  display: none;
+//Отступ для лого сайта в списке, кроме мобильной версии.
+.site-list__item:nth-child(2),
+.site-list__item:nth-child(6) {
+  @media (min-width: @tablet-width){
+    margin-right: 153px;
+  }
 
-  @media (min-width: @tablet-width) {
-    display: block;
-    grid-column: 3 / 4;
+  @media (min-width: @desktop-width){
+    margin-right: 240px;
   }
 }
 
