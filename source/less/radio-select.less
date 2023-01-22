@@ -1,12 +1,12 @@
 .radio-select__list {
   list-style-type: none;
   padding: 0;
+  margin: 20px 20px 24px;
 
   @media (max-width: @mobile-width-only) {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    padding: 20px 0 0;
   }
 
   @media (min-width: @tablet-width) {
@@ -27,6 +27,7 @@
 
 .radio-select__item {
   min-height: 46px;
+  width: 280px;
 
   @media (min-width: @tablet-width) {
     &:nth-child(2n) {
