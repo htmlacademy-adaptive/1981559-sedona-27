@@ -154,7 +154,7 @@ export default gulp.series(
   // copyImages,
   gulp.parallel(
     styles,
-    html,
+    // html,
     // scripts,
     // svg,
     // sprite,

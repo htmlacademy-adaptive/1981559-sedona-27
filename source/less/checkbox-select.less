@@ -7,28 +7,23 @@
     display: grid;
     flex-direction: column;
     gap: 16px;
+    width: 280px;
   }
 
   @media (min-width: @tablet-width) {
-    margin: 7px 84px 0;
+    margin: 29px 84px 0 84px;
+    align-self: normal;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 17px 32px;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 24px 0 44px;
+    justify-items: center;
+    margin: 0 38px 0 33px;
     grid-template-columns: repeat(4, 1fr);
-    gap: 50px;
+    gap: 30px;
     padding-top: 59px;
-  }
-}
-
-.checkbox-select__item:last-child {
-  width: 280px;
-
-  @media (min-width: @desktop-width) {
-    margin-left: -19px;
   }
 }
 
