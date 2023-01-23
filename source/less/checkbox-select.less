@@ -12,18 +12,20 @@
 
   @media (min-width: @tablet-width) {
     margin: 29px 84px 0 84px;
-    align-self: normal;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 17px 32px;
+    width: 480px;
   }
 
   @media (min-width: @desktop-width) {
+    align-self: normal;
     justify-items: center;
     margin: 0 38px 0 33px;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
     padding-top: 59px;
+    width: unset;
   }
 }
 

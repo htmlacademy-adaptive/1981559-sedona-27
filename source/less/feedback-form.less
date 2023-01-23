@@ -293,6 +293,11 @@
 }
 
 .feedback-form__user-text {
+  margin: 0;
+  min-width: 278px;
+  width: 100%;
+  max-width: 768px;
+  min-height: 148px;
   font-size: 18px;
   line-height: 26px;
   background-color: #f2f2f2;
@@ -313,20 +318,6 @@
   }
 
   @media (min-width: @tablet-width) {
-    min-width: 100%;
-  }
-
-  @media (min-width: @desktop-width) {
-    min-width: 80%;
-  }
-}
-
-.feedback-form__user--text-place .feedback-form__user-text {
-  margin: 0;
-  width: 278px;
-  min-height: 148px;
-
-  @media (min-width: @tablet-width) {
     min-height: 160px;
     margin-top: 28px;
   }
@@ -345,7 +336,6 @@
     grid-column: span 2;
     justify-content: space-between;
     align-items: baseline;
-    max-width: 768px;
     margin: 40px 0 0;
   }
 
