@@ -1,5 +1,5 @@
 .button {
-  font-family: "PT Sans", sans-serif;
+  font-family: @general-font;
   text-transform: uppercase;
   font-weight: 700;
   text-decoration: none;
@@ -15,5 +15,10 @@
   &:active {
     background-color: #5496bd;
     color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+    cursor: not-allowed;
   }
 }

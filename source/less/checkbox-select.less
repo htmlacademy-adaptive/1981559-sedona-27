@@ -1,32 +1,31 @@
 .checkbox-select__list {
   list-style-type: none;
-  margin: 0;
-  padding: 20px 0 0;
+  margin: 20px auto 24px;
+  padding: 0;
 
   @media (max-width: @mobile-width-only) {
     display: grid;
     flex-direction: column;
     gap: 16px;
+    width: 280px;
   }
 
   @media (min-width: @tablet-width) {
-    margin: 7px 84px 0;
+    margin: 29px 84px 0 84px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 17px 32px;
+    width: 480px;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 24px 0 44px;
+    align-self: normal;
+    justify-items: center;
+    margin: 0 38px 0 33px;
     grid-template-columns: repeat(4, 1fr);
-    gap: 50px;
+    gap: 30px;
     padding-top: 59px;
-  }
-}
-
-.checkbox-select__item:last-child {
-  @media (min-width: @desktop-width) {
-    margin-left: -19px;
+    width: unset;
   }
 }
 
@@ -47,6 +46,11 @@
 
 .checkbox-select__label:active .checkbox-select__mark {
   background-color: #d5d5d5;
+}
+
+.checkbox-select__input:disabled ~ .checkbox-select__mark {
+  background-color: #333333;
+  cursor: not-allowed;
 }
 
 .checkbox-select__mark {

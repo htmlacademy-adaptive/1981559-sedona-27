@@ -24,6 +24,12 @@
 .inner-advantages__item {
   background-repeat: no-repeat;
   background-position: 18px 0;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .inner-advantages__item--housing {
@@ -31,7 +37,7 @@
 
   @media (min-width: @tablet-width) {
     background-size: 79px 79px;
-    background-position: 55% 20%;
+    background-position: 55% 19%;
   }
 
   @media (min-width: @desktop-width) {
@@ -65,7 +71,7 @@
 
   @media (min-width: @tablet-width) {
     font-size: 21px;
-    margin: 135px 20px 23px 37px;
+    margin: 135px 5% 23px 12%;
   }
 
   @media (min-width: @desktop-width) {
@@ -75,7 +81,7 @@
 
 .inner-advantages__item--food .inner-advantages__title {
   @media (min-width: @tablet-width) {
-    margin: 133px 37px 23px 37px;
+    margin: 133px 10% 23px;
   }
 
   @media (min-width: @desktop-width) {
@@ -100,7 +106,7 @@
 
 .inner-advantages__item--gifts .inner-advantages__title {
   @media (min-width: @tablet-width) {
-    margin: 130px 40px 23px 20px;
+    margin: 130px 14% 23px 6%;
   }
 
   @media (min-width: @desktop-width) {
@@ -119,7 +125,7 @@
 
   @media (min-width: @tablet-width) {
     max-width: 190px;
-    margin: 0 auto;
+    margin: 0 10% 0 17%;
   }
 
   @media (min-width: @desktop-width) {
@@ -128,18 +134,25 @@
 }
 
 .inner-advantages__item--housing .inner-advantages__description {
-  @media (min-width: @tablet-width) {
-    margin: 0 18px 0 35px;
-  }
-
   @media (min-width: @desktop-width) {
     margin: 0 35px 0 52px;
   }
 }
 
+.inner-advantages__item--food .inner-advantages__description {
+  @media (min-width: @tablet-width) {
+    margin: 0 10%;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 43px 0 39px;
+  }
+}
+
+
 .inner-advantages__item--gifts .inner-advantages__description {
   @media (min-width: @tablet-width) {
-    margin: 0 48px 0 27px;
+    margin: 0 14% 0 6%;
   }
 
   @media (min-width: @desktop-width) {
@@ -151,7 +164,7 @@
 .inner-advantages__line-break {
   display: none;
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     display: block;
   }
 }
