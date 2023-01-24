@@ -123,6 +123,11 @@
   border: none;
   padding: 16px;
   box-sizing: border-box;
+  margin-bottom: 16px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 10px;
+  }
 
   &:hover {
     background-color: #e5e5e5;
@@ -132,14 +137,6 @@
     background-color: #ffffff;
     outline: 4px solid #e5e5e5;
     outline-offset: -4px;
-  }
-}
-
-.feedback-form__input {
-  margin-bottom: 16px;
-
-  @media (min-width: @tablet-width) {
-    margin-bottom: 10px;
   }
 }
 
@@ -163,11 +160,12 @@
   padding-right: 63px;
 }
 
-.feedback-form__input--phone, .feedback-form__input--e-mail {
+.feedback-form__input--phone,
+.feedback-form__input--e-mail {
   width: 100%;
 }
 
-  //Декоративная полоска внизу fieldset
+//Декоративная полоска внизу fieldset
 .feedback-form__user:not(:nth-last-child(2)) {
   @media (max-width: @mobile-width-only) {
     box-shadow: inset 0 -1px #e5e5e5;
